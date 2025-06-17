@@ -77,7 +77,7 @@
       <ul class="nav navbar-nav navbar-right">
             <li>
     <a
-      href="https://github.com/miyucomics/hexcellular/tree/6712aaa19da5a4e76b3ec18eec12513c1970f748"
+      href="https://github.com/miyucomics/hexcellular/tree/ab1adbb71e9f8c9d82697cd23f77acc71e6277c2"
         target="_blank"
       class="navbar-link"
       role="button"
@@ -147,9 +147,9 @@
     > Patterns</a></summary>
       <ul>
           <li><a href="#properties" class="toc-elem "><img
-      title="Sculk Sensor"
-      alt="Sculk Sensor"
-      src="https://hexdoc-dev.github.io/hexdoc-minecraft/v/1.20.1/1.0.dev1/assets/minecraft/textures/block/sculk_sensor_inactive.png"
+      title="Observer"
+      alt="Observer"
+      src="https://hexdoc-dev.github.io/hexdoc-minecraft/v/1.20.1/1.0.dev1/assets/minecraft/textures/block/observer.png"
       loading="lazy"
       class="item-texture  texture "
     > Property Iota</a></li>
@@ -178,9 +178,9 @@
 <div id="properties" class="entry">
     <h3 class="entry-title page-header">
     <img
-      title="Sculk Sensor"
-      alt="Sculk Sensor"
-      src="https://hexdoc-dev.github.io/hexdoc-minecraft/v/1.20.1/1.0.dev1/assets/minecraft/textures/block/sculk_sensor_inactive.png"
+      title="Observer"
+      alt="Observer"
+      src="https://hexdoc-dev.github.io/hexdoc-minecraft/v/1.20.1/1.0.dev1/assets/minecraft/textures/block/observer.png"
       loading="lazy"
       class="item-texture  texture "
     >Property Iota<a
@@ -192,9 +192,9 @@
     class="permalink small"
     title="Permalink"
   ><i class="bi bi-link-45deg"></i></a></h3>
-    <p>Using Hexcasting, I can etch information into the laws of the universe themselves. These artificial bits of information are fittingly called properties and they can be accessed from anywhere with a property iota. Two hexcasters with copies of the same property can set the property&#39;s iota and read it to instantly share the iota with each other.</p>
+    <p>I can etch iota as laws of the universe themselves, known as <span style="color: #8d6acc">Properties</span>. Any <span style="color: #b38ef3">Hexcasting</span> medium can interact with <span style="color: #8d6acc">Properties</span> via a reference called a property iota.</p><p>Two <span style="color: #b38ef3">Hexcasters</span> with property iotas pointing to the same <span style="color: #8d6acc">Property</span> can write to one copy and read from the other to instantly transmit information.</p>
 <br />
-    <p>I can also use it to communicate <i>state</i> within and between my Hexcasting appliances. For instance, a <a href="https://hexcasting.hexxy.media/v/0.11.2/1.0/en_us#items/hexcasting">casting device</a> that uses a property that it increments in order to keep track of how many times it has been used and do something different each time.</p><p><i>Spooky action from a distance...</i></p>
+    <p><span style="color: #8d6acc">Properties</span> can also be used to communicate <i>state</i> within and between my <span style="color: #b38ef3">Hexcasting</span> appliances. For instance, a <a href="https://hexcasting.hexxy.media/v/0.11.2/1.0/en_us#items/hexcasting">casting device</a> using a <span style="color: #8d6acc">Property</span> that it increments in order to remember how many times it has been used and do something different each time.</p><p><i>Spooky action from a distance...</i></p>
 <br />
   <div id="properties@hexcellular:create_property" class="">
 <h4 class="pattern-title">Schrödinger&#39;s Refl. (→ property)<a
@@ -249,10 +249,10 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: aawe</canvas>
   </details>
-      <p>Pushes a reference to a random property. Costs one charged amethyst to burn this property into the universe.</p>
+      <p>Creates a property iota for a random <span style="color: #8d6acc">Property</span>. Costs about five <a href="https://hexcasting.hexxy.media/v/0.11.2/1.0/en_us#items/amethyst"><span style="color: #b0b">Charged Amethyst</span></a> to etch this law into the universe.</p>
   </div>
 <br />
-    <p>When creating a property, the spell pushes a property iota with a randomly generated name. This name is the only reference to the created property. I should immediately store these property iota for safe-keeping because there is no way to recover one once all references to it have been lost and the only ways to interact with a property is through its iota.</p>
+    <p>When using <span style="color: #8d6acc">Properties</span>, the created property iota is the <i>only</i> reference to the <span style="color: #8d6acc">Property</span>. I should take care to immediately save the iota lest I lose the only interface to it.</p><p>While the cost to create one is steep, once created, the property iota allows for simple connection to the <span style="color: #8d6acc">Property</span>, allowing me to read and write to it cheaply forevermore.</p>
 <br />
   <div id="properties@hexcellular:observe_property" class="">
 <h4 class="pattern-title">Observation Purif. (property → any)<a
@@ -307,7 +307,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: aawd</canvas>
   </details>
-      <p>Observes the current value of the property iota. Free to use.</p>
+      <p>Observes the current value of the property iota.</p>
   </div>
 <br />
   <div id="properties@hexcellular:set_property" class="">
@@ -363,7 +363,65 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: aawq</canvas>
   </details>
-      <p>Sets the property iota. Costs about a tenth of a dust. All future observations of the property iota return the new value.</p>
+      <p>Sets the property iota. Costs about a tenth of an <a href="https://hexcasting.hexxy.media/v/0.11.2/1.0/en_us#items/amethyst"><span style="color: #b0b">Amethyst Dust</span></a>.</p>
+  </div>
+<br />
+    <p>Occasionally, I may want to pass out property iota without the risk of someone else overwriting their contents. In such cases, I can create read-only copies. They can still be read using <a href="#properties@hexcellular:observe_property"><span style="color: #fc77be">Observation Purification</span></a> and will refer to the <span style="color: #8d6acc">Property</span> as usual but they can not be written to with <a href="#properties@hexcellular:set_property"><span style="color: #fc77be">Schrödinger&#39;s Gambit</span></a>.</p><p>To distinguish, read-only property iotas are cyan.</p>
+<br />
+  <div id="properties@hexcellular:readonly_property" class="">
+<h4 class="pattern-title">Schrödinger&#39;s Purif. (property → property)<a
+    href="#properties@hexcellular:readonly_property"
+    class="permalink small"
+    title="Permalink"
+  ><i class="bi bi-link-45deg"></i></a></h4>
+  <details class="details-collapsible">
+    <summary class="collapse-details collapse-spell"></summary>
+    <div class="dropdown spell-settings-dropdown">
+      <span
+        href=""
+        class="dropdown-toggle spell-settings-toggle"
+        data-toggle="dropdown"
+        role="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="bi bi-gear-fill"></i>
+      </span>
+      <ul class="dropdown-menu">
+        <li class="dropdown-submenu">
+          <a
+            href=""
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Renders</a>
+          <ul class="dropdown-menu dropdown-menu-left render-dropdowns"></ul>
+        </li>
+        <li class="dropdown-submenu">
+          <a
+            href=""
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Palettes</a>
+          <ul class="dropdown-menu dropdown-menu-left palette-dropdowns"></ul>
+        </li>
+      </ul>
+    </div>
+      <canvas
+        class="spell-viz"
+        width="216"
+        height="216"
+        data-string="aawa"
+        data-start="south_west"
+        data-per-world="False"
+      >Your browser does not support visualizing patterns. Pattern code: aawa</canvas>
+  </details>
+      <p>Creates a read-only property iota from a given property iota.</p>
   </div>
 <br />
 </div>
